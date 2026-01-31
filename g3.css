@@ -51,17 +51,21 @@ header{
     max-width: 1140px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
   
 }
 #hero-section h1{
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
     color: #131313;
     margin-top: 102px;
 }
 #hero-section p{
     margin-top: 25px;
-    font-size: 16px;
+    
     color: #727272;
 }
 #hero-section button{
@@ -70,7 +74,7 @@ header{
     border: none;
     color: white;
     padding: 21px 24px;
-    font-size: 16px;
+    
     border-radius: 8px;
     cursor: pointer;
 }
@@ -78,8 +82,56 @@ header{
     background-color: #e07c0c;
 }
 
-#hero-image{
-    width: 1440px;
+.hero-text img{
+    margin: 50px auto 0px;
+    display: block;
+    padding-bottom: 45px;
+}
+/* feature section */
+#feature{
+    max-width: 1440px;
     margin: 0 auto;
-    margin-top: 50px;
+    display: flex;
+    gap: 73px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 85px;
+    
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    /* width: 537px; */
+}
+.text-feature h2{
+    font-size: 2.8125rem;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 24px;
+}
+.text-feature p{
+    color: #727272;
+}
+
+.text-feature h2 .bold{
+    color: #131313;
+    font-weight: 700;
+}
+.text-feature h2 .orange{
+    color: #FF900E;
+    font-weight: 700;
+}
+.text-feature button{
+    margin-top: 32px;
+    background-color: #FF900E;
+    border: none;
+    color: white;
+    padding: 21px 24px;
+    
+    border-radius: 8px;
+    cursor: pointer;
+}
+.text-feature button:hover{
+    background-color: #e07c0c;
 }
